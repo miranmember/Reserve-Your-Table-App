@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modifyRestaurantController">
+   <children>
+      <Pane layoutX="-259.0" layoutY="-18.0" prefHeight="255.0" prefWidth="321.0" rotate="61.4" style="-fx-background-color: #e63846; -fx-background-radius: 10;" />
+      <Pane layoutX="240.0" layoutY="-127.0" prefHeight="255.0" prefWidth="321.0" style="-fx-background-color: #e63846; -fx-background-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="64.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Restaurant" textAlignment="CENTER" wrappingWidth="193.80078125">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="modifyCancel" layoutX="533.0" layoutY="482.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #00A8A8;" text="Cancel " textFill="WHITE" />
+      <TextField fx:id="totalSeatField" disable="true" layoutX="451.0" layoutY="293.0" prefHeight="25.0" prefWidth="306.0" />
+      <TextField fx:id="addressField" disable="true" layoutX="451.0" layoutY="348.0" prefHeight="25.0" prefWidth="306.0" />
+      <Button fx:id="modifyDone" disable="true" layoutX="533.0" layoutY="414.0" mnemonicParsing="false" onAction="#submitUpdate" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #00A8A8;" text="Done" textFill="WHITE" />
+      <Text fx:id="Text1" fill="WHITE" layoutX="168.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="Text2" fill="WHITE" layoutX="129.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="searchQuery" layoutX="104.0" layoutY="319.0" mnemonicParsing="false" onAction="#sendQuery" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #00A8A8;" text="Search by Name" textFill="WHITE" />
+      <TextField fx:id="availableSeatField" disable="true" layoutX="451.0" layoutY="241.0" prefHeight="25.0" prefWidth="306.0" />
+      <Text fill="WHITE" layoutX="359.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Seats" />
+      <Text fill="WHITE" layoutX="370.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Seats" />
+      <Text fill="WHITE" layoutX="378.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <TextField fx:id="searchField" layoutX="88.0" layoutY="280.0" />
+      <Text fx:id="errorMsg" fill="#e80000" layoutX="351.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Could not find restauraunt." visible="false" />
+   </children>
+</AnchorPane>
